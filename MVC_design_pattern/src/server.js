@@ -10,10 +10,8 @@ const HOST_NAME = process.env.HOST_NAME || 'localhost';
 //Config view engine & static files
 configViewEngine(app);
 
-//Router
+//Khai bao routes
 app.use('/', webRoutes);
-
-
 
 //Chay server
 app.listen(PORT, HOST_NAME, () => {
